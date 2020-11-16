@@ -7,6 +7,7 @@ import "normalize.css";
 
 render(
 	<React.StrictMode>
+		<GlobalStyles />
 		<App />
 	</React.StrictMode>,
 	document.getElementById("root")
