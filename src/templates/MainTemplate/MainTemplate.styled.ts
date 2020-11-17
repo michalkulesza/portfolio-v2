@@ -1,12 +1,13 @@
 import styled from "styled-components/macro";
 
 type Props = {
-	vertical: String;
-	horizontal: String;
+	vertical: string;
+	horizontal: string;
+	direction: string;
 };
 
 export const Main = styled.div(
-	({ vertical, horizontal }: Props) => `
+	({ vertical, horizontal, direction }: Props) => `
 	position: relative;
 	height: 100%;
 	width: 100%;
@@ -15,5 +16,6 @@ export const Main = styled.div(
 	display: flex;
 	justify-content: ${horizontal};
 	align-items: ${vertical};
-`
+	flex-direction: ${direction};
+	`
 );
