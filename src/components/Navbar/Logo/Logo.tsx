@@ -7,8 +7,9 @@ type Props = {
 };
 
 const Logo: React.FC<Props> = ({ text, href = "/" }) => {
+	const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => e.preventDefault();
 	return (
-		<a href={href}>
+		<a href={href} onClick={e => handleLogoClick(e)}>
 			<Main>{text}</Main>
 		</a>
 	);
