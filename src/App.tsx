@@ -1,8 +1,13 @@
 import React from "react";
-import { HeaderContainer } from "./containers";
+import { NavbarContainer, HeaderContainer } from "./containers";
 
 const App: React.FC = () => {
-	return <HeaderContainer />;
+	return (
+		<>
+			<NavbarContainer logoText="michalkulesza" />
+			<HeaderContainer />
+		</>
+	);
 };
 
 export default App;

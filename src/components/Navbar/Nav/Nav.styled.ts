@@ -1,8 +1,16 @@
 import styled from "styled-components/macro";
 import { Colors } from "../../../styles/colors";
+import { respondTo } from "../../../styles/respondTo";
 
 export const Main = styled.ul`
 	display: flex;
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+
+	${respondTo.xs`
+		visibility: visible;
+	`}
 `;
 
 export const Item = styled.li`
