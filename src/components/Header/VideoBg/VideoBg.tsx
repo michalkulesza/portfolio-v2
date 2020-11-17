@@ -1,10 +1,10 @@
 import React from "react";
 import { Wrapper, Video } from "./VideoBg.styled";
 
-import video from "../../res/vid/backgroundVideo.mp4";
+import video from "../../../res/vid/backgroundVideo.mp4";
 
 type Props = {
-	children?: JSX.Element;
+	children?: any;
 };
 
 const VideoBg: React.FC<Props> = ({ children, ...restProps }) => {

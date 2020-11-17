@@ -2,7 +2,7 @@ import React from "react";
 import App from "./App";
 import { render } from "react-dom";
 // import reportWebVitals from "./reportWebVitals";
-import { GlobalStyles } from "./global-styles";
+import { GlobalStyles } from "./styles/global-styles";
 import "normalize.css";
 
 render(
