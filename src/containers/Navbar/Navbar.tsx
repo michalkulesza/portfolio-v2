@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Main } from "./Navbar.styled";
 import { MainTemplate } from "../../templates";
 import Nav from "../../components/Navbar/Nav/Nav";
@@ -11,12 +11,14 @@ type Props = {
 };
 
 const Navbar: React.FC<Props> = ({ logoText, children, ...restProps }) => {
+	const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+
 	return (
 		<Main {...restProps}>
 			<MainTemplate vertical="center" horizontal="space-between">
 				<Logo text={logoText} />
 				<Nav />
-				<NavMobile />
+				<NavMobile mobileMenuVisible={mobileMenuVisible} setMobileMenuVisible={setMobileMenuVisible} />
 			</MainTemplate>
 		</Main>
 	);
