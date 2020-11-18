@@ -1,4 +1,5 @@
-import { FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 
 import image1 from "../res/img/chatter.jpg";
 
@@ -26,13 +27,13 @@ export const worksData = {
 				},
 				{
 					id: 2,
-					name: "React",
-					icon: FaReact,
+					name: "JavaScript",
+					icon: SiJavascript,
 				},
 				{
 					id: 3,
-					name: "React",
-					icon: FaReact,
+					name: "Node",
+					icon: FaNodeJs,
 				},
 			],
 		},

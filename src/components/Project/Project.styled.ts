@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { Shadow } from "../../styles/snippets";
 
 type PosterProps = {
 	visible: boolean;
@@ -10,16 +11,19 @@ export const Main = styled.div`
 `;
 
 export const VideoContainer = styled.div`
+	position: relative;
 	height: 100%;
 	width: 100%;
-	position: relative;
-	overflow: hidden;
 `;
 
+export const ContentContainer = styled.div``;
+
 export const Video = styled.video`
-	height: 100%;
-	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
 	z-index: -1;
+	overflow: hidden;
+	box-shadow: ${Shadow.medium};
 `;
 
 export const Poster = styled.img(
@@ -34,3 +38,13 @@ export const Poster = styled.img(
 	transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 `
 );
+
+export const ButtonsContainer = styled.div`
+	display: flex;
+	margin-bottom: 0.7rem;
+`;
+
+export const TagsContainer = styled.div`
+	display: flex;
+	/* overflow: hidden; */
+`;
