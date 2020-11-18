@@ -1,20 +1,25 @@
 import styled from "styled-components/macro";
-import { Colors } from "../../styles/snippets";
+import { Colors, Shadow } from "../../styles/snippets";
 
 type MainProps = {
 	large?: boolean;
+	small?: boolean;
 };
 
 export const Main = styled.div(
-	({ large }: MainProps) => `
+	({ large, small }: MainProps) => `
    position: relative;
-	padding: ${large ? "1em 2.5em" : "0.8em 1.5em"};
-   border: ${large ? "2px" : "1px"} solid ${Colors.white};
-   border-radius: 30px;
+	padding: ${large ? "1rem 2.5rem" : small ? "0.5rem 1rem" : "0.8rem 1.5rem"};
+   // border: ${large ? "2px" : "1px"} solid ${Colors.white};
+   background-color: ${Colors.lightGrey};
+   width: fit-content;
+   color: ${Colors.grey};
+   border-radius: 3px;
    cursor: pointer;
-   font-size: ${large ? "1.2em" : "1em"};
+   font-size: ${large ? "1.2rem" : "1rem"};
    transition: all 0.05s ease-in-out;
    overflow: hidden;
+   box-shadow: ${Shadow.small};
    
    &::after{
       content:"";
