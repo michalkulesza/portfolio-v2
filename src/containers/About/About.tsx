@@ -10,8 +10,8 @@ const AboutContainer: React.FC<Props> = () => {
 		<Main>
 			<SectionTemplate>
 				<Subtitle>{aboutData.subtitle}</Subtitle>
-				<Title style={{ whiteSpace: "pre-line" }}>{aboutData.title}</Title>
-				<p style={{ textAlign: "center", whiteSpace: "pre-line" }}>{aboutData.text}</p>
+				<Title>{aboutData.title}</Title>
+				<p style={{ textAlign: "center" }}>{aboutData.text}</p>
 			</SectionTemplate>
 		</Main>
 	);
