@@ -11,3 +11,4 @@ export { default as NavMobile } from "./Navbar/NavMobile/NavMobile";
 
 //Common
 export { default as Subtitle } from "./Subtitle/Subtitle";
+export { default as Title } from "./Title/Title";
