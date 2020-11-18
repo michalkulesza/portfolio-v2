@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarContainer, HeaderContainer, AboutContainer, SkillsContainer } from "./containers";
+import { NavbarContainer, HeaderContainer, AboutContainer, SkillsContainer, WorksContainer } from "./containers";
 
 const App: React.FC = () => {
 	return (
@@ -8,6 +8,7 @@ const App: React.FC = () => {
 			<HeaderContainer />
 			<AboutContainer />
 			<SkillsContainer />
+			<WorksContainer />
 		</>
 	);
 };
