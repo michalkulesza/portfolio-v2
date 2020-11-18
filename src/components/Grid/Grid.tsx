@@ -10,9 +10,7 @@ type Props = {
 const Grid: React.FC<Props> = ({ col = 4, children, ...restProps }) => {
 	return (
 		<Main col={col} {...restProps}>
-			{children.map((child: JSX.Element) => (
-				<Container>{child}</Container>
-			))}
+			{children.length > 1 ? children.map((child: JSX.Element) => <Container>{child}</Container>) : children}
 		</Main>
 	);
 };
