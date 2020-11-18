@@ -14,7 +14,7 @@ const Skills: React.FC<Props> = () => {
 			<SectionTemplate>
 				<Subtitle>{skillsData.subtitle}</Subtitle>
 				<Title>{skillsData.title}</Title>
-				<Grid style={{ marginTop: "3rem" }}>
+				<Grid>
 					{skillsData.skills.map(skill => (
 						<Skill key={skill.id}>
 							<skill.icon />

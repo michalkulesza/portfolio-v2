@@ -2,8 +2,7 @@ export const aboutData = {
 	subtitle: `Summary`,
 	title: `Who am I, what can I do
    and what I want to do`,
-	text: `
-   My name’s Michał and I’m a Germany based creative Web Developer.
+	text: `My name’s Michał and I’m a Germany based creative Web Developer.
    
    My set of skills can provide beautifully crafted and innovative Web Apps
    using Javascript as well as React.

@@ -44,5 +44,6 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 1.2rem;
       line-height: 1.7rem;
       white-space: pre-line;
+      margin: 0;
    }
 `;
