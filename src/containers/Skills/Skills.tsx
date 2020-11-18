@@ -2,7 +2,7 @@ import React from "react";
 import { Main } from "./Skills.styled";
 import { SectionTemplate } from "../../templates";
 import { Subtitle, Title, Grid, Skill } from "../../components";
-import { Colors } from "../../styles/colors";
+import { Colors } from "../../styles/snippets";
 
 import { skillsData } from "../../fixtures/skills";
 

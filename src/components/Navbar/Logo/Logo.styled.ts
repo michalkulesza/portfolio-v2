@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors } from "../../../styles/colors";
+import { Colors } from "../../../styles/snippets";
 
 export const Main = styled.div`
 	font-family: "Titillium Web", sans-serif;

@@ -18,9 +18,20 @@ export const worksData = {
 			link: "",
 			frontendUrl: "",
 			backendUrl: "",
-			tech: [
+			tags: [
 				{
-					name: "",
+					id: 1,
+					name: "React",
+					icon: FaReact,
+				},
+				{
+					id: 2,
+					name: "React",
+					icon: FaReact,
+				},
+				{
+					id: 3,
+					name: "React",
 					icon: FaReact,
 				},
 			],

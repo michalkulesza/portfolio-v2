@@ -13,7 +13,7 @@ type Props = {
 		link: string;
 		frontendUrl: string;
 		backendUrl: string;
-		tech: {
+		tags: {
 			name: string;
 			icon: IconType;
 		}[];

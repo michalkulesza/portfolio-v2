@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors } from "../../styles/colors";
+import { Colors } from "../../styles/snippets";
 
 type MainProps = {
 	large?: boolean;
