@@ -1,11 +1,12 @@
 import React from "react";
-import { NavbarContainer, HeaderContainer } from "./containers";
+import { NavbarContainer, HeaderContainer, AboutContainer } from "./containers";
 
 const App: React.FC = () => {
 	return (
 		<>
 			<NavbarContainer logoText="michalkulesza" />
 			<HeaderContainer />
+			<AboutContainer />
 		</>
 	);
 };

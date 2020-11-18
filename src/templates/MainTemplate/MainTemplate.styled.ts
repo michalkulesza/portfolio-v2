@@ -11,7 +11,7 @@ export const Main = styled.div(
 	position: relative;
 	height: 100%;
 	width: 100%;
-	max-width: 90%;
+	max-width: 1400px;
 	margin: 0 1em;
 	display: flex;
 	justify-content: ${horizontal};
