@@ -1,6 +1,3 @@
-//Button
-export { default as Button } from "./Button/Button";
-
 //Header
 export { default as VideoBg } from "./Header/VideoBg/VideoBg";
 
@@ -9,8 +6,15 @@ export { default as Logo } from "./Navbar/Logo/Logo";
 export { default as Nav } from "./Navbar/Nav/Nav";
 export { default as NavMobile } from "./Navbar/NavMobile/NavMobile";
 
-//Common
-export { default as Subtitle } from "./Subtitle/Subtitle";
-export { default as Title } from "./Title/Title";
-export { default as Grid } from "./Grid/Grid";
+//Skill
 export { default as Skill } from "./Skill/Skill";
+
+//Project
+export { default as Project } from "./Project/Project";
+
+//Common
+export { default as Button } from "./Button/Button";
+export { default as Title } from "./Title/Title";
+export { default as SmallTitle } from "./SmallTitle/SmallTitle";
+export { default as Subtitle } from "./Subtitle/Subtitle";
+export { default as Grid } from "./Grid/Grid";
