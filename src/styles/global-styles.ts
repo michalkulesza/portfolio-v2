@@ -5,10 +5,9 @@ export const GlobalStyles = createGlobalStyle`
       font-family: 'Lato', sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background-color: #141414;
+      background-color: #FFFFFF;
       color: #fff;
       font-size: 16px;
-      overflow-x: hidden;   
       }
 
    ul,li{
