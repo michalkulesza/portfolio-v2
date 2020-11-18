@@ -1,5 +1,6 @@
 import React from "react";
-import { NavbarContainer, HeaderContainer, AboutContainer, SkillsContainer, WorksContainer } from "./containers";
+import { NavbarContainer } from "./containers";
+import { HeaderContainer, AboutContainer, SkillsContainer, WorksContainer } from "./sections";
 
 const App: React.FC = () => {
 	return (

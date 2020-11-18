@@ -2,7 +2,7 @@ import React from "react";
 import { Main } from "./Works.styled";
 import { SectionTemplate } from "../../templates";
 import { Subtitle, Title, Grid } from "../../components";
-import { ProjectContainer } from "../";
+import { ProjectContainer } from "../../containers";
 
 import { worksData } from "../../fixtures/works";
 
