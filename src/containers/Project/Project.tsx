@@ -14,6 +14,7 @@ type Props = {
 		frontendUrl: string;
 		backendUrl: string;
 		tags: {
+			id: number;
 			name: string;
 			icon: IconType;
 		}[];

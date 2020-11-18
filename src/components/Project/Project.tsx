@@ -22,6 +22,7 @@ type Props = {
 		frontendUrl: string;
 		backendUrl: string;
 		tags: {
+			id: number;
 			name: string;
 			icon: IconType;
 		}[];
@@ -44,7 +45,7 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 				<Subtitle style={{ marginBottom: "0.7rem" }}>{data.description}</Subtitle>
 				<TagsContainer style={{ marginBottom: "0.7rem", marginLeft: "0.5rem" }}>
 					{data.tags.map(tag => (
-						<Tag>
+						<Tag key={tag.id}>
 							<tag.icon />
 							{tag.name}
 						</Tag>
