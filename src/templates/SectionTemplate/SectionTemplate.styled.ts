@@ -7,5 +7,6 @@ export const Main = styled.section`
 	max-width: 1400px;
 	margin: 6em 1em;
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 `;

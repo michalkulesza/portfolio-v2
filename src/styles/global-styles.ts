@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Colors } from "./colors";
 
 export const GlobalStyles = createGlobalStyle`
    html, body {
@@ -31,11 +32,16 @@ export const GlobalStyles = createGlobalStyle`
 
    *{
       box-sizing: border-box;
-      user-select: none;
    }
 
    a{
       text-decoration: none;
       color: #fff
+   }
+
+   p{
+      color: ${Colors.darkGrey};
+      font-size: 1.2rem;
+      line-height: 1.7rem;
    }
 `;
