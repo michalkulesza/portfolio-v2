@@ -11,6 +11,7 @@ export { default as Skill } from "./Skill/Skill";
 
 //Project
 export { default as Project } from "./Project/Project";
+export { default as Tag } from "./Project/Tag/Tag";
 
 //Common
 export { default as Button } from "./Button/Button";
