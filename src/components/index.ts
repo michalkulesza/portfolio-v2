@@ -13,3 +13,4 @@ export { default as NavMobile } from "./Navbar/NavMobile/NavMobile";
 export { default as Subtitle } from "./Subtitle/Subtitle";
 export { default as Title } from "./Title/Title";
 export { default as Grid } from "./Grid/Grid";
+export { default as Skill } from "./Skill/Skill";
