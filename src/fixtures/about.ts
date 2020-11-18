@@ -1,7 +1,6 @@
 export const aboutData = {
 	subtitle: `Summary`,
-	title: `
-   Who am I, what can I do
+	title: `Who am I, what can I do
    and what I want to do`,
 	text: `
    My name’s Michał and I’m a Germany based creative Web Developer.
@@ -18,6 +17,5 @@ export const aboutData = {
    project will maintain the company’s standards while going beyond
    the needs and expectations of your desired target audience.
    
-   If you’d like any details, don’t hesitate to get in touch.
-   `,
+   If you’d like any details, don’t hesitate to get in touch.`,
 };

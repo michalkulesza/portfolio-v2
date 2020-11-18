@@ -43,5 +43,6 @@ export const GlobalStyles = createGlobalStyle`
       color: ${Colors.darkGrey};
       font-size: 1.2rem;
       line-height: 1.7rem;
+      white-space: pre-line;
    }
 `;
