@@ -1,12 +1,25 @@
 import React from "react";
-import { Main } from "./Skill.styled";
+import { IconType } from "react-icons/lib";
+import Subtitle from "../Subtitle/Subtitle";
+import { Main, Icon } from "./Skill.styled";
 
 type Props = {
-	children: any;
+	data: {
+		id: number;
+		title: string;
+		icon: IconType;
+	};
 };
 
-const Skill: React.FC<Props> = ({ children }) => {
-	return <Main>{children}</Main>;
+const Skill: React.FC<Props> = ({ data }) => {
+	return (
+		<Main>
+			<Icon>
+				<data.icon />
+			</Icon>
+			<Subtitle>{data.title}</Subtitle>
+		</Main>
+	);
 };
 
 export default Skill;
