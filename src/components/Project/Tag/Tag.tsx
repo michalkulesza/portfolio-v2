@@ -1,12 +1,24 @@
 import React from "react";
-import { Main } from "./Tag.styled";
+import { IconType } from "react-icons/lib";
+import { Main, Icon, Text } from "./Tag.styled";
 
 type Props = {
-	children: any;
+	data: {
+		id: number;
+		name: string;
+		icon: IconType;
+	};
 };
 
-const Tag: React.FC<Props> = ({ children }) => {
-	return <Main>{children}</Main>;
+const Tag: React.FC<Props> = ({ data }) => {
+	return (
+		<Main>
+			<Icon>
+				<data.icon />
+			</Icon>
+			<Text>{data.name}</Text>
+		</Main>
+	);
 };
 
 export default Tag;

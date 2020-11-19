@@ -41,16 +41,15 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 				<Poster src={data.image} visible={posterVisible}></Poster>
 			</VideoContainer>
 			<ContentContainer>
-				<SmallTitle>{data.title}</SmallTitle>
+				<span>
+					<SmallTitle>{data.title}</SmallTitle>
+					<TagsContainer style={{ marginLeft: "0.8rem" }}>
+						{data.tags.map(tag => (
+							<Tag key={tag.id} data={tag} />
+						))}
+					</TagsContainer>
+				</span>
 				<Subtitle style={{ marginBottom: "0.7rem" }}>{data.description}</Subtitle>
-				<TagsContainer style={{ marginBottom: "0.7rem", marginLeft: "0.5rem" }}>
-					{data.tags.map(tag => (
-						<Tag key={tag.id}>
-							<tag.icon />
-							{tag.name}
-						</Tag>
-					))}
-				</TagsContainer>
 				<ButtonsContainer>
 					<Button small style={{ marginRight: "0.5rem" }}>
 						Preview

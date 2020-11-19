@@ -16,7 +16,13 @@ export const VideoContainer = styled.div`
 	width: 100%;
 `;
 
-export const ContentContainer = styled.div``;
+export const ContentContainer = styled.div`
+	span {
+		display: flex;
+		align-items: center;
+		margin-top: 1.2rem;
+	}
+`;
 
 export const Video = styled.video`
 	max-height: 100%;
@@ -42,6 +48,7 @@ export const Poster = styled.img(
 export const ButtonsContainer = styled.div`
 	display: flex;
 	margin-bottom: 0.7rem;
+	align-items: center;
 `;
 
 export const TagsContainer = styled.div`

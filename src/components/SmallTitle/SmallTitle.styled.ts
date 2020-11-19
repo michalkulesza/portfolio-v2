@@ -3,5 +3,7 @@ import { Colors } from "../../styles/snippets";
 
 export const Main = styled.h2`
 	color: ${Colors.darkGrey};
-	margin-bottom: 0.5rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin: 0rem;
 `;
