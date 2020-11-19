@@ -4,7 +4,11 @@ import { Main } from "./Button.styled";
 type Props = {
 	large?: boolean;
 	small?: boolean;
+	grow?: boolean;
 	noShadow?: boolean;
+	scaleOnHover?: boolean;
+	color?: "purple";
+	textColor?: "light";
 	style?: object;
 	children?: any;
 };

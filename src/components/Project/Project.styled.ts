@@ -53,6 +53,7 @@ export const ButtonsContainer = styled.div`
 	padding: 0.5rem;
 	background-color: ${Colors.lightGrey};
 	border-radius: 3px;
+	flex-wrap: nowrap;
 `;
 
 export const TagsContainer = styled.div`

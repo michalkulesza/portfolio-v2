@@ -12,6 +12,8 @@ import { SmallTitle, Subtitle, Tag, Button } from "../../components";
 import { IconType } from "react-icons";
 import { Colors } from "../../styles/snippets";
 
+import { BsArrowRightShort } from "react-icons/bs";
+
 type Props = {
 	data: {
 		id: number;
@@ -52,13 +54,14 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 				</span>
 				<Subtitle style={{ marginBottom: "0.7rem" }}>{data.description}</Subtitle>
 				<ButtonsContainer>
-					<Button small style={{ marginRight: "0.5rem", backgroundColor: Colors.purple, color: Colors.white }}>
+					<Button small grow scaleOnHover color="purple" textColor="light" style={{ marginRight: "0.5rem" }}>
 						Preview
+						<BsArrowRightShort />
 					</Button>
-					<Button small noShadow style={{ marginRight: "0.5rem", backgroundColor: Colors.greyish }}>
+					<Button small grow noShadow style={{ marginRight: "0.5rem", backgroundColor: Colors.greyish }}>
 						App Code
 					</Button>
-					<Button small noShadow style={{ backgroundColor: Colors.greyish }}>
+					<Button small grow noShadow style={{ backgroundColor: Colors.greyish }}>
 						Server Code
 					</Button>
 				</ButtonsContainer>
