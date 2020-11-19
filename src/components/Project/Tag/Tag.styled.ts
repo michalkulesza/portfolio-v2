@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors, Shadow } from "../../../styles/snippets";
+import { Colors, Shadow, Transition } from "../../../styles/snippets";
 
 export const Main = styled.div`
 	position: relative;
@@ -9,13 +9,23 @@ export const Main = styled.div`
 	color: ${Colors.grey};
 	display: flex;
 	align-items: center;
-	transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: ${Transition(0.1)};
 	cursor: pointer;
 	user-select: none;
 `;
 
 export const Icon = styled.div`
 	padding: 0.3rem;
+	transition: ${Transition(0.1)};
+
+	${Main}:hover & {
+		svg {
+			fill: ${Colors.purple};
+			path {
+				fill: ${Colors.purple};
+			}
+		}
+	}
 `;
 
 export const Text = styled.div`
@@ -29,7 +39,7 @@ export const Text = styled.div`
 	border-radius: 2px;
 	opacity: 0;
 	box-shadow: ${Shadow.medium};
-	transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: ${Transition(0.15)};
 	pointer-events: none;
 
 	&:after {

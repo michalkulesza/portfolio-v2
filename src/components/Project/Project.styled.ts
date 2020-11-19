@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Shadow } from "../../styles/snippets";
+import { Colors, Shadow } from "../../styles/snippets";
 
 type PosterProps = {
 	visible: boolean;
@@ -47,11 +47,14 @@ export const Poster = styled.img(
 
 export const ButtonsContainer = styled.div`
 	display: flex;
+	justify-content: center;
 	margin-bottom: 0.7rem;
 	align-items: center;
+	padding: 0.5rem;
+	background-color: ${Colors.lightGrey};
+	border-radius: 3px;
 `;
 
 export const TagsContainer = styled.div`
 	display: flex;
-	/* overflow: hidden; */
 `;

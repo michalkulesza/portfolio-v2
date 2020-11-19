@@ -10,6 +10,7 @@ import {
 } from "./Project.styled";
 import { SmallTitle, Subtitle, Tag, Button } from "../../components";
 import { IconType } from "react-icons";
+import { Colors } from "../../styles/snippets";
 
 type Props = {
 	data: {
@@ -51,13 +52,15 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 				</span>
 				<Subtitle style={{ marginBottom: "0.7rem" }}>{data.description}</Subtitle>
 				<ButtonsContainer>
-					<Button small style={{ marginRight: "0.5rem" }}>
+					<Button small style={{ marginRight: "0.5rem", backgroundColor: Colors.purple, color: Colors.white }}>
 						Preview
 					</Button>
-					<Button small style={{ marginRight: "0.5rem" }}>
+					<Button small noShadow style={{ marginRight: "0.5rem", backgroundColor: Colors.greyish }}>
 						App Code
 					</Button>
-					<Button small>Server Code</Button>
+					<Button small noShadow style={{ backgroundColor: Colors.greyish }}>
+						Server Code
+					</Button>
 				</ButtonsContainer>
 			</ContentContainer>
 		</Main>

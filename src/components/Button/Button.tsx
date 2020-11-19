@@ -4,16 +4,13 @@ import { Main } from "./Button.styled";
 type Props = {
 	large?: boolean;
 	small?: boolean;
-	children?: any;
+	noShadow?: boolean;
 	style?: object;
+	children?: any;
 };
 
-const Button: React.FC<Props> = ({ large, small, children, ...restProps }) => {
-	return (
-		<Main large={large} small={small} {...restProps}>
-			{children}
-		</Main>
-	);
+const Button: React.FC<Props> = ({ children, ...restProps }) => {
+	return <Main {...restProps}>{children}</Main>;
 };
 
 export default Button;
