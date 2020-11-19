@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors } from "../../styles/snippets";
+import { Colors, Transition } from "../../styles/snippets";
 
 export const Main = styled.div`
 	height: 100%;
@@ -10,7 +10,7 @@ export const Main = styled.div`
 	align-items: center;
 	flex-direction: column;
 	cursor: pointer;
-	transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: ${Transition(0.1, "transform")};
 
 	svg {
 		height: 100%;

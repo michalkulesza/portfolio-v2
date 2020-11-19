@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors, Shadow } from "../../styles/snippets";
+import { Colors, Shadow, Transition } from "../../styles/snippets";
 
 type MainProps = {
 	large?: boolean;
@@ -20,7 +20,7 @@ export const Main = styled.div(
    font-size: ${large ? "1.2rem" : small ? "0.9rem" : "1rem"};
    overflow: hidden;
    box-shadow: ${noShadow ? "" : Shadow.small};
-   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   transition: ${Transition(0.3)};
    flex: 1;
    text-align: center;
    

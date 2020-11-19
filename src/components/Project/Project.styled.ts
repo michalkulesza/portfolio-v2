@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors, Shadow } from "../../styles/snippets";
+import { Colors, Shadow, Transition } from "../../styles/snippets";
 
 type PosterProps = {
 	visible: boolean;
@@ -41,7 +41,7 @@ export const Poster = styled.img(
 	width: 100%;
 	object-fit: cover;
 	opacity: ${visible ? "1" : "0"};
-	transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: ${Transition(1, "opacity")};
 `
 );
 

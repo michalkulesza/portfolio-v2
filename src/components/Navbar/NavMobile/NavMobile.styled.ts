@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { Colors } from "../../../styles/snippets";
+import { Colors, Transition } from "../../../styles/snippets";
 import { respondTo } from "../../../styles/respondTo";
 
 type NavProps = {
@@ -33,7 +33,7 @@ export const Nav = styled.ul(
 	};
 	opacity: ${mobileMenuVisible ? "1" : "0"};
 	pointer-events: ${mobileMenuVisible ? "all" : "none"};
-	transition: all 0.2s ease-in-out;
+	transition: ${Transition(0.2)};
 	`
 );
 
