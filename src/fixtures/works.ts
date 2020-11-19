@@ -1,7 +1,15 @@
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { SiJavascript, SiJest, SiRedux, SiTypescript } from "react-icons/si";
 
-import image1 from "../res/img/chatter.jpg";
+import chatterImg from "../res/img/chatter.jpg";
+import feederImg from "../res/img/feeder.jpg";
+import cardImg from "../res/img/card.jpg";
+import noteImg from "../res/img/note.jpg";
+import discoverImg from "../res/img/discover.jpg";
+import urlImg from "../res/img/url.jpg";
+import calcImg from "../res/img/calc.jpg";
+import guessImg from "../res/img/guess.jpg";
+import speedImg from "../res/img/speed.jpg";
 
 import video1 from "../res/vid/backgroundVideo.mp4";
 
@@ -14,11 +22,11 @@ export const worksData = {
 			id: 1,
 			title: "Chatter",
 			description: "Realtime chatting service.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: chatterImg,
+			video: null,
+			link: "https://michalkulesza.me/chatter",
+			frontendUrl: "https://github.com/michalkulesza/chat-client",
+			backendUrl: "https://github.com/michalkulesza/chat-server",
 			tags: [
 				{
 					id: 1,
@@ -46,11 +54,11 @@ export const worksData = {
 			id: 2,
 			title: "Feeder",
 			description: "Social media website, post and like feeds.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: feederImg,
+			video: null,
+			link: "https://michalkulesza.me/feeder/",
+			frontendUrl: "https://github.com/michalkulesza/feeder",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
@@ -78,11 +86,11 @@ export const worksData = {
 			id: 3,
 			title: "CreditCard",
 			description: "Interactive & animated credit card form.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: cardImg,
+			video: null,
+			link: "https://www.michalkulesza.me/creditcard/",
+			frontendUrl: "https://github.com/michalkulesza/credit-card",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
@@ -105,11 +113,11 @@ export const worksData = {
 			id: 4,
 			title: "Note App",
 			description: "Create, edit and delete notes with formatting.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: noteImg,
+			video: null,
+			link: "https://michalkulesza.me/noteapp",
+			frontendUrl: "https://github.com/michalkulesza/note-app",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
@@ -137,11 +145,11 @@ export const worksData = {
 			id: 5,
 			title: "Diccover",
 			description: "Discover new songs based on a artists you like.",
-			image: image1,
+			image: discoverImg,
 			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			link: "https://michalkulesza.me/discover/",
+			frontendUrl: "https://github.com/michalkulesza/Discover",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
@@ -164,11 +172,11 @@ export const worksData = {
 			id: 6,
 			title: "URL Shortener",
 			description: "Service that shortens long URL's.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: urlImg,
+			video: null,
+			link: "https://michalkulesza.me/urlShort",
+			frontendUrl: "https://github.com/michalkulesza/URL-shortener-front",
+			backendUrl: "https://github.com/michalkulesza/URL-Shortener",
 			tags: [
 				{
 					id: 1,
@@ -196,11 +204,11 @@ export const worksData = {
 			id: 7,
 			title: "Calculator",
 			description: "Simple calculator based on a iOS Calculator app.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: calcImg,
+			video: null,
+			link: "https://michalkulesza.me/calculator",
+			frontendUrl: "https://github.com/michalkulesza/Calculator",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
@@ -218,11 +226,11 @@ export const worksData = {
 			id: 8,
 			title: "Guess the country",
 			description: "Game where you guess european countries.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: guessImg,
+			video: null,
+			link: "https://michalkulesza.me/guess",
+			frontendUrl: "https://github.com/michalkulesza/GuessTheCountry",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
@@ -245,11 +253,11 @@ export const worksData = {
 			id: 9,
 			title: "Speed type",
 			description: "Speed typing game that measures WPM.",
-			image: image1,
-			video: video1,
-			link: "",
-			frontendUrl: "",
-			backendUrl: "",
+			image: speedImg,
+			video: null,
+			link: "https://michalkulesza.me/speedtype",
+			frontendUrl: "https://github.com/michalkulesza/speedtype",
+			backendUrl: null,
 			tags: [
 				{
 					id: 1,
