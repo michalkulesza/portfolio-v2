@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import { Colors } from "../../../styles/snippets";
-import { respondTo } from "../../../styles/respondTo";
+import { mediaQuery } from "../../../styles/mediaQuery";
 
 export const Main = styled.ul`
 	display: flex;
@@ -8,9 +8,9 @@ export const Main = styled.ul`
 	position: absolute;
 	right: 0;
 
-	${respondTo.xs`
+	${mediaQuery("xs")(`
 		visibility: visible;
-	`}
+	`)}
 `;
 
 export const Item = styled.li`

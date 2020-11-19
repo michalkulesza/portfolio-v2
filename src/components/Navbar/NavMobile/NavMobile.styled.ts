@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import { Colors, Transition } from "../../../styles/snippets";
-import { respondTo } from "../../../styles/respondTo";
+import { mediaQuery } from "../../../styles/mediaQuery";
 
 type NavProps = {
 	mobileMenuVisible: boolean;
@@ -14,9 +14,9 @@ export const Main = styled.div`
 	display: flex;
 	justify-content: flex-end;
 
-	${respondTo.xs`
+	${mediaQuery("xs")(`
 	   visibility: hidden;
-   `};
+   `)};
 `;
 
 export const Nav = styled.ul(
