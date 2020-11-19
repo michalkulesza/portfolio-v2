@@ -1,16 +1,16 @@
 import React from "react";
-import { Wrapper, Video } from "./VideoBg.styled";
-
-import video from "../../../res/vid/backgroundVideo.mp4";
+import { Wrapper, Video, Overlay } from "./VideoBg.styled";
 
 type Props = {
+	video: string;
 	children?: any;
 };
 
-const VideoBg: React.FC<Props> = ({ children, ...restProps }) => {
+const VideoBg: React.FC<Props> = ({ video, children, ...restProps }) => {
 	return (
 		<Wrapper>
-			<Video src={video} muted loop {...restProps}></Video>
+			<Overlay />
+			<Video src={video} autoPlay muted loop {...restProps}></Video>
 		</Wrapper>
 	);
 };

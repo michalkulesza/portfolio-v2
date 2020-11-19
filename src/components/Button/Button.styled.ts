@@ -20,7 +20,7 @@ export const Main = styled.div(
 	padding: ${large ? "1rem 2.5rem" : small ? "0.8rem 0" : "0.8rem 1.5rem"};
    background-color: ${color === "purple" ? Colors.purple : Colors.greyish};
    width: fit-content;
-   color: ${textColor === "light" ? Colors.white : Colors.darkGrey};
+   color: ${textColor === "light" ? Colors.white : Colors.grey};
    border-radius: 3px;
    cursor: pointer;
    font-size: ${large ? "1.2rem" : small ? "0.9rem" : "1rem"};

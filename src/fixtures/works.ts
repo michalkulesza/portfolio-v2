@@ -11,7 +11,7 @@ import calcImg from "../res/img/calc.jpg";
 import guessImg from "../res/img/guess.jpg";
 import speedImg from "../res/img/speed.jpg";
 
-import video1 from "../res/vid/backgroundVideo.mp4";
+// import video1 from "../res/vid/backgroundVideo.webm";
 
 export const worksData = {
 	subtitle: "Works",
@@ -20,8 +20,8 @@ export const worksData = {
 	data: [
 		{
 			id: 1,
-			title: "Chatter",
-			description: "Realtime chatting service.",
+			title: "Netflix",
+			description: "Streaming webisite mockup",
 			image: chatterImg,
 			video: null,
 			link: "https://michalkulesza.me/chatter",
@@ -146,7 +146,7 @@ export const worksData = {
 			title: "Diccover",
 			description: "Discover new songs based on a artists you like.",
 			image: discoverImg,
-			video: video1,
+			video: null,
 			link: "https://michalkulesza.me/discover/",
 			frontendUrl: "https://github.com/michalkulesza/Discover",
 			backendUrl: null,
