@@ -1,15 +1,16 @@
 import React from "react";
 import { NavbarContainer } from "./containers";
-import { HeaderContainer, AboutContainer, SkillsContainer, WorksContainer } from "./sections";
+import { HeaderContainer, AboutContainer, SkillsContainer, WorksContainer, FooterContainer } from "./sections";
 
 const App: React.FC = () => {
 	return (
 		<>
-			<NavbarContainer logoText="michalkulesza" />
+			<NavbarContainer />
 			<HeaderContainer />
 			<AboutContainer />
 			<SkillsContainer />
 			<WorksContainer />
+			<FooterContainer />
 		</>
 	);
 };

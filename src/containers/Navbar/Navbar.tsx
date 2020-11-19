@@ -5,18 +5,15 @@ import Nav from "../../components/Navbar/Nav/Nav";
 import NavMobile from "../../components/Navbar/NavMobile/NavMobile";
 import Logo from "../../components/Navbar/Logo/Logo";
 
-type Props = {
-	logoText: string;
-	children?: any;
-};
+type Props = {};
 
-const Navbar: React.FC<Props> = ({ logoText, children, ...restProps }) => {
+const Navbar: React.FC<Props> = () => {
 	const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
 	return (
-		<Main {...restProps}>
+		<Main>
 			<MainTemplate vertical="center" horizontal="space-between">
-				<Logo text={logoText} />
+				<Logo text="michalkulesza" />
 				<Nav />
 				<NavMobile mobileMenuVisible={mobileMenuVisible} setMobileMenuVisible={setMobileMenuVisible} />
 			</MainTemplate>

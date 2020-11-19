@@ -9,12 +9,19 @@ type Props = {
 	scaleOnHover?: boolean;
 	color?: "purple";
 	textColor?: "light";
+	mail?: string;
 	style?: object;
 	children?: any;
 };
 
-const Button: React.FC<Props> = ({ children, ...restProps }) => {
-	return <Main {...restProps}>{children}</Main>;
+const Button: React.FC<Props> = ({ mail, children, ...restProps }) => {
+	return mail ? (
+		<a href={`mailto:${mail}`}>
+			<Main {...restProps}>{children}</Main>
+		</a>
+	) : (
+		<Main {...restProps}>{children}</Main>
+	);
 };
 
 export default Button;

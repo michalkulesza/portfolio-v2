@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
 
    p{
       color: ${Colors.darkGrey};
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.7rem;
       white-space: pre-line;
       margin: 0;
