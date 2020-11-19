@@ -6,14 +6,9 @@ type PosterProps = {
 };
 
 export const Main = styled.div`
-	width: 100%;
 	height: fit-content;
-`;
-
-export const VideoContainer = styled.div`
-	position: relative;
-	height: 100%;
 	width: 100%;
+	margin: 1rem;
 `;
 
 export const ContentContainer = styled.div`
@@ -24,12 +19,23 @@ export const ContentContainer = styled.div`
 	}
 `;
 
-export const Video = styled.video`
-	max-height: 100%;
-	max-width: 100%;
-	z-index: -1;
-	overflow: hidden;
+export const VideoContainer = styled.div`
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 62.5%;
 	box-shadow: ${Shadow.medium};
+	border-radius: 3px;
+	overflow: hidden;
+`;
+
+export const Video = styled.video`
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 `;
 
 export const Poster = styled.img(

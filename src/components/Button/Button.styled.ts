@@ -17,10 +17,10 @@ export const Main = styled.div(
    justify-content: center;
    align-items: center;
    position: relative;
-	padding: ${large ? "1rem 2.5rem" : small ? "0.6rem 0" : "0.8rem 1.5rem"};
-   background-color: ${color === "purple" ? Colors.purple : Colors.lightGrey};
+	padding: ${large ? "1rem 2.5rem" : small ? "0.8rem 0" : "0.8rem 1.5rem"};
+   background-color: ${color === "purple" ? Colors.purple : Colors.greyish};
    width: fit-content;
-   color: ${textColor === "light" ? Colors.white : Colors.grey};
+   color: ${textColor === "light" ? Colors.white : Colors.darkGrey};
    border-radius: 3px;
    cursor: pointer;
    font-size: ${large ? "1.2rem" : small ? "0.9rem" : "1rem"};
@@ -40,5 +40,7 @@ export const Main = styled.div(
       transform: scale(1.2);
       margin-left: 0.2rem;
    }
+
+   
 `
 );

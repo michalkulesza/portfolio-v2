@@ -15,7 +15,7 @@ const Footer: React.FC<Props> = () => {
 				<Subtitle>{footerData.subtitle}</Subtitle>
 				<Title>{footerData.title}</Title>
 				<p style={{ textAlign: "center", marginBottom: "2rem" }}>{footerData.text}</p>
-				<Button mail={footerData.email} color="purple" textColor="light" scaleOnHover large>
+				<Button url={`mailto:${footerData.email}`} color="purple" textColor="light" scaleOnHover large>
 					{footerData.email}
 				</Button>
 				<p style={{ fontSize: "1rem", textAlign: "center", marginTop: "2rem", color: Colors.grey }}>

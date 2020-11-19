@@ -20,10 +20,10 @@ type Props = {
 		title: string;
 		description: string;
 		image: string;
-		video: string;
+		video: string | null;
 		link: string;
 		frontendUrl: string;
-		backendUrl: string;
+		backendUrl: string | null;
 		tags: {
 			id: number;
 			name: string;
@@ -40,7 +40,7 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 	return (
 		<Main>
 			<VideoContainer>
-				<Video src={data.video} onCanPlay={handleCanPlayThrough}></Video>
+				{data.video && <Video src={data.video} onCanPlay={handleCanPlayThrough}></Video>}
 				<Poster src={data.image} visible={posterVisible}></Poster>
 			</VideoContainer>
 			<ContentContainer>
@@ -54,16 +54,26 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 				</span>
 				<Subtitle style={{ marginBottom: "0.7rem" }}>{data.description}</Subtitle>
 				<ButtonsContainer>
-					<Button small grow scaleOnHover color="purple" textColor="light" style={{ marginRight: "0.5rem" }}>
+					<Button
+						url={data.link}
+						small
+						grow
+						scaleOnHover
+						color="purple"
+						textColor="light"
+						style={{ marginRight: "0.5rem" }}
+					>
 						Preview
 						<BsArrowRightShort />
 					</Button>
-					<Button small grow noShadow style={{ marginRight: "0.5rem", backgroundColor: Colors.greyish }}>
-						App Code
+					<Button url={data.frontendUrl} small grow noShadow style={{ marginRight: "0.5rem" }}>
+						{data.backendUrl ? "App Source" : "Source on GitHub"}
 					</Button>
-					<Button small grow noShadow style={{ backgroundColor: Colors.greyish }}>
-						Server Code
-					</Button>
+					{data.backendUrl && (
+						<Button url={data.backendUrl} small grow noShadow>
+							Server Source
+						</Button>
+					)}
 				</ButtonsContainer>
 			</ContentContainer>
 		</Main>

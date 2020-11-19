@@ -9,14 +9,14 @@ type Props = {
 	scaleOnHover?: boolean;
 	color?: "purple";
 	textColor?: "light";
-	mail?: string;
+	url?: string;
 	style?: object;
 	children?: any;
 };
 
-const Button: React.FC<Props> = ({ mail, children, ...restProps }) => {
-	return mail ? (
-		<a href={`mailto:${mail}`}>
+const Button: React.FC<Props> = ({ url, children, ...restProps }) => {
+	return url ? (
+		<a href={url} target="_blank" rel="noreferrer" style={{ display: "flex", flex: 1 }}>
 			<Main {...restProps}>{children}</Main>
 		</a>
 	) : (

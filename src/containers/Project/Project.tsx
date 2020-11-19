@@ -9,10 +9,10 @@ type Props = {
 		title: string;
 		description: string;
 		image: string;
-		video: string;
+		video: string | null;
 		link: string;
 		frontendUrl: string;
-		backendUrl: string;
+		backendUrl: string | null;
 		tags: {
 			id: number;
 			name: string;
@@ -35,11 +35,7 @@ const ProjectContainer: React.FC<Props> = ({ data }) => {
 		return () => clearTimeout(posterTimer);
 	}, [videoReady]);
 
-	return (
-		<Main>
-			<Project setVideoReady={setVideoReady} posterVisible={posterVisible} data={data}></Project>
-		</Main>
-	);
+	return <Project setVideoReady={setVideoReady} posterVisible={posterVisible} data={data}></Project>;
 };
 
 export default ProjectContainer;
