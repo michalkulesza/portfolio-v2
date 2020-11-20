@@ -1,34 +1,38 @@
 import React from "react";
 import { Main, Nav, Item } from "./NavMobile.styled";
-import { menuData } from "../../../fixtures/navigation";
 
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-scroll";
 
 type Props = {
+	altColor?: boolean;
+	data: {
+		id: number;
+		name: string;
+		url: string;
+	}[];
 	mobileMenuVisible: boolean;
 	setMobileMenuVisible: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const NavMobile: React.FC<Props> = ({ mobileMenuVisible, setMobileMenuVisible }) => {
+const NavMobile: React.FC<Props> = ({ altColor, data, mobileMenuVisible, setMobileMenuVisible }) => {
 	const handleMenuTriggerMouseDown = () => setMobileMenuVisible(!mobileMenuVisible);
-	const handleMenuItemClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-		e.preventDefault();
-		setMobileMenuVisible(false);
-	};
 
 	return (
-		<Main>
+		<Main altColor={altColor}>
 			{mobileMenuVisible ? (
 				<MdClose onMouseDown={handleMenuTriggerMouseDown} style={{ transform: "scale(1.8)" }} />
 			) : (
 				<FiMenu onMouseDown={handleMenuTriggerMouseDown} style={{ transform: "scale(1.4)" }} />
 			)}
-			<Nav mobileMenuVisible={mobileMenuVisible}>
-				{menuData.map(item => (
-					<a href={item.url} key={item.id} onClick={e => handleMenuItemClick(e)}>
-						<Item>{item.name}</Item>
-					</a>
+			<Nav altColor={altColor} mobileMenuVisible={mobileMenuVisible}>
+				{data.map(item => (
+					<Item key={item.id}>
+						<Link to={item.url} spy hashSpy smooth={true} duration={500} isDynamic={true} ignoreCancelEvents={true}>
+							<span>{item.name}</span>
+						</Link>
+					</Item>
 				))}
 			</Nav>
 		</Main>

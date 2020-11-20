@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { Main } from "./Button.styled";
 
 type Props = {
@@ -9,18 +10,30 @@ type Props = {
 	scaleOnHover?: boolean;
 	color?: "purple";
 	textColor?: "light";
+	newTab?: boolean;
 	url?: string;
+	link?: string;
 	style?: object;
 	children?: any;
 };
 
-const Button: React.FC<Props> = ({ url, children, ...restProps }) => {
+const Button: React.FC<Props> = ({ newTab, grow, url, link, children, ...restProps }) => {
 	return url ? (
-		<a href={url} target="_blank" rel="noreferrer" style={{ display: "flex", flex: 1 }}>
-			<Main {...restProps}>{children}</Main>
+		<a href={url} target={newTab ? "_blank" : ""} rel="noreferrer" style={grow ? { display: "flex", flexGrow: 1 } : {}}>
+			<Main grow={grow} {...restProps}>
+				{children}
+			</Main>
 		</a>
+	) : link ? (
+		<Link to={link} spy hashSpy smooth={true} duration={500} isDynamic={true} ignoreCancelEvents={true}>
+			<Main grow={grow} {...restProps}>
+				{children}
+			</Main>
+		</Link>
 	) : (
-		<Main {...restProps}>{children}</Main>
+		<Main grow={grow} {...restProps}>
+			{children}
+		</Main>
 	);
 };
 

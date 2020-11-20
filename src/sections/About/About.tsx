@@ -3,15 +3,16 @@ import { Main } from "./About.styled";
 import { SectionTemplate } from "../../templates";
 import { Subtitle, Title } from "../../components";
 import { aboutData } from "../../fixtures/about";
+import { ABOUT } from "../../constants/routes";
 
 type Props = {};
 const AboutContainer: React.FC<Props> = () => {
 	return (
-		<Main>
+		<Main id={ABOUT}>
 			<SectionTemplate>
 				<Subtitle>{aboutData.subtitle}</Subtitle>
 				<Title>{aboutData.title}</Title>
-				<p style={{ textAlign: "center" }}>{aboutData.text}</p>
+				<p>{aboutData.text}</p>
 			</SectionTemplate>
 		</Main>
 	);

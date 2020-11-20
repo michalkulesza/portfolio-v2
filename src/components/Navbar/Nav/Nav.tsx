@@ -1,20 +1,33 @@
 import React from "react";
 import { Main, Item } from "./Nav.styled";
+import { Link } from "react-scroll";
 
-import { menuData } from "../../../fixtures/navigation";
+type Props = {
+	dark?: boolean;
+	data: {
+		id: number;
+		name: string;
+		url: string;
+	}[];
+};
 
-type Props = {};
-
-const Nav: React.FC<Props> = () => {
-	const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => e.preventDefault();
-
+const Nav: React.FC<Props> = ({ dark, data }) => {
 	return (
-		<Main>
-			{menuData.map(item => (
+		<Main dark={dark}>
+			{data.map(item => (
 				<Item key={item.id}>
-					<a href={item.url} onClick={e => handleItemClick(e)}>
+					<Link
+						to={item.url}
+						spy
+						hashSpy
+						activeClass="active"
+						smooth={true}
+						duration={500}
+						isDynamic={true}
+						ignoreCancelEvents={false}
+					>
 						{item.name}
-					</a>
+					</Link>
 				</Item>
 			))}
 		</Main>

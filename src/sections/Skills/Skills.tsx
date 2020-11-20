@@ -2,15 +2,15 @@ import React from "react";
 import { Main } from "./Skills.styled";
 import { SectionTemplate } from "../../templates";
 import { Subtitle, Title, Grid, Skill } from "../../components";
-import { Colors } from "../../styles/snippets";
 
 import { skillsData } from "../../fixtures/skills";
+import { SKILLS } from "../../constants/routes";
 
 type Props = {};
 
 const Skills: React.FC<Props> = () => {
 	return (
-		<Main style={{ backgroundColor: `${Colors.lightGrey}` }}>
+		<Main id={SKILLS}>
 			<SectionTemplate>
 				<Subtitle>{skillsData.subtitle}</Subtitle>
 				<Title>{skillsData.title}</Title>
