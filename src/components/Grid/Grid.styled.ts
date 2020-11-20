@@ -25,5 +25,9 @@ export const Container = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem 1rem;
+	padding: 1rem 0rem;
+
+	${mediaQuery("sm")(`
+		padding: 2rem 1rem;
+	`)}
 `;

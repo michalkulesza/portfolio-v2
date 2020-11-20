@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { mediaQuery } from "../../styles/mediaQuery";
 import { Colors, Shadow, Transition } from "../../styles/snippets";
 
 type PosterProps = {
@@ -8,7 +9,10 @@ type PosterProps = {
 export const Main = styled.div`
 	height: fit-content;
 	width: 100%;
-	margin: 1rem;
+
+	${mediaQuery("md")(`
+		margin: 1rem;
+	`)}
 `;
 
 export const ContentContainer = styled.div`

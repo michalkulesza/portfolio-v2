@@ -4,4 +4,8 @@ export const Main = styled.div`
 	position: relative;
 	display: flex;
 	justify-content: center;
+
+	p {
+		text-align: center;
+	}
 `;

@@ -11,7 +11,7 @@ const AboutContainer: React.FC<Props> = () => {
 			<SectionTemplate>
 				<Subtitle>{aboutData.subtitle}</Subtitle>
 				<Title>{aboutData.title}</Title>
-				<p style={{ textAlign: "center" }}>{aboutData.text}</p>
+				<p>{aboutData.text}</p>
 			</SectionTemplate>
 		</Main>
 	);
