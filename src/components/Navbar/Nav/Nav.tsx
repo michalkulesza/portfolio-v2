@@ -1,16 +1,20 @@
 import React from "react";
 import { Main, Item } from "./Nav.styled";
 
-import { menuData } from "../../../fixtures/navigation";
+type Props = {
+	data: {
+		id: number;
+		name: string;
+		url: string;
+	}[];
+};
 
-type Props = {};
-
-const Nav: React.FC<Props> = () => {
+const Nav: React.FC<Props> = ({ data }) => {
 	const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => e.preventDefault();
 
 	return (
 		<Main>
-			{menuData.map(item => (
+			{data.map(item => (
 				<Item key={item.id}>
 					<a href={item.url} onClick={e => handleItemClick(e)}>
 						{item.name}

@@ -5,6 +5,8 @@ import Nav from "../../components/Navbar/Nav/Nav";
 import NavMobile from "../../components/Navbar/NavMobile/NavMobile";
 import Logo from "../../components/Navbar/Logo/Logo";
 
+import { menuData } from "../../fixtures/navigation";
+
 type Props = {};
 
 const Navbar: React.FC<Props> = () => {
@@ -14,8 +16,8 @@ const Navbar: React.FC<Props> = () => {
 		<Main>
 			<MainTemplate vertical="center" horizontal="space-between">
 				<Logo text="michalkulesza" />
-				<Nav />
-				<NavMobile mobileMenuVisible={mobileMenuVisible} setMobileMenuVisible={setMobileMenuVisible} />
+				<Nav data={menuData} />
+				<NavMobile data={menuData} mobileMenuVisible={mobileMenuVisible} setMobileMenuVisible={setMobileMenuVisible} />
 			</MainTemplate>
 		</Main>
 	);
