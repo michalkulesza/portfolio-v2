@@ -2,6 +2,7 @@ import React from "react";
 import { Main } from "./SectionTemplate.styled";
 
 type Props = {
+	style?: object;
 	children?: any;
 };
 

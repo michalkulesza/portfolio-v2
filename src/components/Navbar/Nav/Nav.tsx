@@ -11,29 +11,22 @@ type Props = {
 };
 
 const Nav: React.FC<Props> = ({ data }) => {
-	const handleItemClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => e.preventDefault();
-
 	return (
 		<Main>
 			{data.map(item => (
 				<Item key={item.id}>
 					<Link
+						to={item.url}
+						spy
+						hashSpy
 						activeClass="active"
-						to="target"
-						spy={true}
 						smooth={true}
-						hashSpy={true}
-						offset={50}
 						duration={500}
-						delay={1000}
 						isDynamic={true}
 						ignoreCancelEvents={false}
 					>
-						Your name
-					</Link>
-					<a href={item.url} onClick={e => handleItemClick(e)}>
 						{item.name}
-					</a>
+					</Link>
 				</Item>
 			))}
 		</Main>

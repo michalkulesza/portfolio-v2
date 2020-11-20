@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import useScrollPosition from "@react-hook/window-scroll";
 import { Main } from "./Navbar.styled";
 import { MainTemplate } from "../../templates";
 import Nav from "../../components/Navbar/Nav/Nav";
@@ -11,9 +12,18 @@ type Props = {};
 
 const Navbar: React.FC<Props> = () => {
 	const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+	const [navVisible, setNavVisible] = useState(false);
+	const [prevScrolledValue, setPrevScrolledValue] = useState(0);
+	const scrolled = useScrollPosition();
+
+	useEffect(() => {
+		if (prevScrolledValue > scrolled) setNavVisible(true);
+		if (navVisible && scrolled > prevScrolledValue) setNavVisible(false);
+		setPrevScrolledValue(scrolled);
+	}, [prevScrolledValue, scrolled, navVisible]);
 
 	return (
-		<Main>
+		<Main visible={navVisible} scrolled={scrolled}>
 			<MainTemplate vertical="center" horizontal="space-between">
 				<Logo text="michalkulesza" />
 				<Nav data={menuData} />

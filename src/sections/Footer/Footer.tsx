@@ -12,7 +12,7 @@ type Props = {};
 const Footer: React.FC<Props> = () => {
 	return (
 		<Main id={CONTACT}>
-			<SectionTemplate>
+			<SectionTemplate style={{ marginTop: 0, marginBottom: 0 }}>
 				<Subtitle>{footerData.subtitle}</Subtitle>
 				<Title>{footerData.title}</Title>
 				<p style={{ textAlign: "center", marginBottom: "2rem" }}>{footerData.text}</p>

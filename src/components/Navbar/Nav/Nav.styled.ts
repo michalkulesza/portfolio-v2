@@ -18,9 +18,23 @@ export const Item = styled.li`
 	padding: 0.5em;
 	color: ${Colors.white};
 	cursor: pointer;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 
 	&:last-of-type {
 		margin-right: -0.5rem;
+	}
+	a.active {
+		position: relative;
+		&:after {
+			content: "";
+			height: 7px;
+			width: 7px;
+			position: absolute;
+			top: 50%;
+			left: -15px;
+			border-radius: 50%;
+			transform: translateY(-50%);
+			background-color: ${Colors.purple};
+		}
 	}
 `;
