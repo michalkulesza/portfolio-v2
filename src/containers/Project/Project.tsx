@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Main } from "./Project.styled";
+// import { Main } from "./Project.styled";
 import { Project } from "../../components";
 import { IconType } from "react-icons";
 
@@ -21,18 +21,16 @@ type Props = {
 	};
 };
 
-let posterTimer: number;
-
 const ProjectContainer: React.FC<Props> = ({ data }) => {
 	const [videoReady, setVideoReady] = useState(false);
 	const [posterVisible, setPosterVisible] = useState(true);
 
 	useEffect(() => {
 		if (videoReady) {
-			posterTimer = setTimeout(() => setPosterVisible(false), 1000);
-		}
+			let posterTimer = setTimeout(() => setPosterVisible(false), 1000);
 
-		return () => clearTimeout(posterTimer);
+			return () => clearTimeout(posterTimer);
+		}
 	}, [videoReady]);
 
 	return <Project setVideoReady={setVideoReady} posterVisible={posterVisible} data={data}></Project>;

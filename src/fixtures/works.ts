@@ -11,7 +11,8 @@ import calcImg from "../res/img/calc.jpg";
 import guessImg from "../res/img/guess.jpg";
 import speedImg from "../res/img/speed.jpg";
 
-// import video1 from "../res/vid/backgroundVideo.webm";
+import video1 from "../res/vid/backgroundVideo.webm";
+import video2 from "../res/vid/backgroundVideo.mp4";
 
 export const worksData = {
 	subtitle: "Works",
@@ -23,7 +24,7 @@ export const worksData = {
 			title: "Netflix",
 			description: "Streaming webisite mockup",
 			image: chatterImg,
-			video: null,
+			video: video1,
 			link: "https://michalkulesza.me/chatter",
 			frontendUrl: "https://github.com/michalkulesza/chat-client",
 			backendUrl: "https://github.com/michalkulesza/chat-server",
@@ -55,7 +56,7 @@ export const worksData = {
 			title: "Feeder",
 			description: "Social media website, post and like feeds.",
 			image: feederImg,
-			video: null,
+			video: video2,
 			link: "https://michalkulesza.me/feeder/",
 			frontendUrl: "https://github.com/michalkulesza/feeder",
 			backendUrl: null,
