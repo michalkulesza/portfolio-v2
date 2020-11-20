@@ -1,8 +1,7 @@
 export const headerData = {
 	mainText: `Hi, my name is Michal.
-   Web developer with a Front-end focus.`,
-	subText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero corporis,
-   optio facilis nesciunt fuga quaerat. Accusamus quod maiores aliquam!`,
+   I am a React Web Developer.`,
+	subText: `I create amazing applications written with Javascript, Typescript, React and Node.`,
 	buttons: [
 		{
 			id: 1,

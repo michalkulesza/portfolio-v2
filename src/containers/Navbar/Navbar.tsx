@@ -22,12 +22,21 @@ const Navbar: React.FC<Props> = () => {
 		setPrevScrolledValue(scrolled);
 	}, [prevScrolledValue, scrolled, navVisible]);
 
+	useEffect(() => {
+		scrolled >= 100 && setMobileMenuVisible(false);
+	}, [scrolled]);
+
 	return (
 		<Main visible={navVisible} scrolled={scrolled}>
 			<MainTemplate vertical="center" horizontal="space-between">
-				<Logo text="michalkulesza" />
+				<Logo dark={navVisible && scrolled >= 100} text="michalkulesza" />
 				<Nav data={menuData} />
-				<NavMobile data={menuData} mobileMenuVisible={mobileMenuVisible} setMobileMenuVisible={setMobileMenuVisible} />
+				<NavMobile
+					altColor={navVisible && scrolled >= 100}
+					data={menuData}
+					mobileMenuVisible={mobileMenuVisible}
+					setMobileMenuVisible={setMobileMenuVisible}
+				/>
 			</MainTemplate>
 		</Main>
 	);
