@@ -10,7 +10,6 @@ import {
 } from "./Project.styled";
 import { SmallTitle, Subtitle, Tag, Button } from "../../components";
 import { IconType } from "react-icons";
-import { Colors } from "../../styles/snippets";
 
 import { BsArrowRightShort } from "react-icons/bs";
 
@@ -40,7 +39,7 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 	return (
 		<Main>
 			<VideoContainer>
-				{data.video && <Video src={data.video} onCanPlay={handleCanPlayThrough}></Video>}
+				{data.video && <Video autoPlay src={data.video} onCanPlayThrough={handleCanPlayThrough}></Video>}
 				<Poster src={data.image} visible={posterVisible}></Poster>
 			</VideoContainer>
 			<ContentContainer>

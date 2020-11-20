@@ -14,12 +14,13 @@ export const Main = styled.ul`
 `;
 
 export const Item = styled.li`
-	margin-right: 1em;
+	margin-right: 1rem;
 	padding: 0.5em;
 	color: ${Colors.white};
 	cursor: pointer;
+	font-size: 1.2rem;
 
 	&:last-of-type {
-		margin-right: -0.5em;
+		margin-right: -0.5rem;
 	}
 `;

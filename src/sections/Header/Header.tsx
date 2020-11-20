@@ -1,9 +1,10 @@
 import React from "react";
 import { Main, Content } from "./Header.styled";
-import { Button, VideoBg } from "../../components";
+import { Button, Title, VideoBg } from "../../components";
 import { MainTemplate } from "../../templates";
 
 import video from "../../res/vid/backgroundVideo.webm";
+import { Colors } from "../../styles/snippets";
 
 const HeaderContainer: React.FC = () => {
 	return (
@@ -14,8 +15,13 @@ const HeaderContainer: React.FC = () => {
 					<h1 style={{ fontSize: "5em", margin: "0px", marginBottom: "0.2em" }}>
 						Web developer with a Front-end focus.
 					</h1>
-					<Button color="purple" textColor="light" scaleOnHover large>
-						What do I do
+					<Title style={{ textAlign: "left", color: Colors.lightGrey, fontSize: "1.5rem", fontWeight: "400" }}>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero corporis,
+						<br />
+						optio facilis nesciunt fuga quaerat. Accusamus quod maiores aliquam!
+					</Title>
+					<Button color="purple" textColor="light" scaleOnHover large style={{ marginRight: "1rem" }}>
+						My works
 					</Button>
 				</MainTemplate>
 			</Content>
