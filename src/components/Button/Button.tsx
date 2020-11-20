@@ -9,18 +9,23 @@ type Props = {
 	scaleOnHover?: boolean;
 	color?: "purple";
 	textColor?: "light";
+	newTab?: boolean;
 	url?: string;
 	style?: object;
 	children?: any;
 };
 
-const Button: React.FC<Props> = ({ url, children, ...restProps }) => {
+const Button: React.FC<Props> = ({ newTab, grow, url, children, ...restProps }) => {
 	return url ? (
-		<a href={url} target="_blank" rel="noreferrer" style={{ display: "flex", flex: 1 }}>
-			<Main {...restProps}>{children}</Main>
+		<a href={url} target={newTab ? "_blank" : ""} rel="noreferrer" style={grow ? { display: "flex", flexGrow: 1 } : {}}>
+			<Main grow={grow} {...restProps}>
+				{children}
+			</Main>
 		</a>
 	) : (
-		<Main {...restProps}>{children}</Main>
+		<Main grow={grow} {...restProps}>
+			{children}
+		</Main>
 	);
 };
 

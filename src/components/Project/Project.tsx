@@ -54,6 +54,7 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 				<Subtitle style={{ marginBottom: "0.7rem" }}>{data.description}</Subtitle>
 				<ButtonsContainer>
 					<Button
+						newTab
 						url={data.link}
 						small
 						grow
@@ -65,11 +66,11 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 						Preview
 						<BsArrowRightShort />
 					</Button>
-					<Button url={data.frontendUrl} small grow noShadow style={{ marginRight: "0.5rem" }}>
+					<Button newTab url={data.frontendUrl} small grow noShadow style={{ marginRight: "0.5rem" }}>
 						{data.backendUrl ? "App Source" : "Source on GitHub"}
 					</Button>
 					{data.backendUrl && (
-						<Button url={data.backendUrl} small grow noShadow>
+						<Button newTab url={data.backendUrl} small grow noShadow>
 							Server Source
 						</Button>
 					)}
