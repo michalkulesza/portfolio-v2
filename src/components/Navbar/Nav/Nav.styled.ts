@@ -2,7 +2,12 @@ import styled from "styled-components/macro";
 import { Colors } from "../../../styles/snippets";
 import { mediaQuery } from "../../../styles/mediaQuery";
 
-export const Main = styled.ul`
+type MainProps = {
+	dark?: boolean;
+};
+
+export const Main = styled.ul(
+	({ dark }: MainProps) => `
 	display: flex;
 	visibility: hidden;
 	position: absolute;
@@ -11,7 +16,12 @@ export const Main = styled.ul`
 	${mediaQuery("xs")(`
 		visibility: visible;
 	`)}
-`;
+
+	a{
+		color: ${dark && Colors.darkGrey}
+	}
+`
+);
 
 export const Item = styled.li`
 	margin-right: 1rem;

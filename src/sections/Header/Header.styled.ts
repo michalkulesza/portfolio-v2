@@ -1,9 +1,11 @@
 import styled from "styled-components/macro";
+import { Colors } from "../../styles/snippets";
 
 export const Main = styled.section`
 	position: relative;
 	height: 100vh;
 	width: 100%;
+	background-color: ${Colors.black};
 `;
 
 export const Content = styled.div`

@@ -20,7 +20,7 @@ const HeaderContainer: React.FC = () => {
 					{headerData.buttons.map(button => (
 						<Button
 							key={button.id}
-							url={button.url}
+							link={button.url}
 							color="purple"
 							textColor="light"
 							scaleOnHover

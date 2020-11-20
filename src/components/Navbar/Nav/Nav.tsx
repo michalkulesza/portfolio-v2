@@ -3,6 +3,7 @@ import { Main, Item } from "./Nav.styled";
 import { Link } from "react-scroll";
 
 type Props = {
+	dark?: boolean;
 	data: {
 		id: number;
 		name: string;
@@ -10,9 +11,9 @@ type Props = {
 	}[];
 };
 
-const Nav: React.FC<Props> = ({ data }) => {
+const Nav: React.FC<Props> = ({ dark, data }) => {
 	return (
-		<Main>
+		<Main dark={dark}>
 			{data.map(item => (
 				<Item key={item.id}>
 					<Link

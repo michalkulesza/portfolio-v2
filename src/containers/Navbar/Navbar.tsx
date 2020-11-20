@@ -30,7 +30,7 @@ const Navbar: React.FC<Props> = () => {
 		<Main visible={navVisible} scrolled={scrolled}>
 			<MainTemplate vertical="center" horizontal="space-between">
 				<Logo dark={navVisible && scrolled >= 100} text="michalkulesza" />
-				<Nav data={menuData} />
+				<Nav dark={navVisible && scrolled >= 100} data={menuData} />
 				<NavMobile
 					altColor={navVisible && scrolled >= 100}
 					data={menuData}

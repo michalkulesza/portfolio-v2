@@ -1,3 +1,5 @@
+import { WORKS } from "../constants/routes";
+
 export const headerData = {
 	mainText: `Hi, my name is Michal.
    I am a React Web Developer.`,
@@ -6,7 +8,7 @@ export const headerData = {
 		{
 			id: 1,
 			text: "My Works",
-			url: "/",
+			url: WORKS,
 		},
 	],
 };
