@@ -1,7 +1,6 @@
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript, SiJest, SiRedux, SiTypescript } from "react-icons/si";
+import { SiJavascript, SiJest, SiRedux } from "react-icons/si";
 
-import chatterImg from "../res/img/chatter.jpg";
 import feederImg from "../res/img/feeder.jpg";
 import cardImg from "../res/img/card.jpg";
 import noteImg from "../res/img/note.jpg";
@@ -11,52 +10,17 @@ import calcImg from "../res/img/calc.jpg";
 import guessImg from "../res/img/guess.jpg";
 import speedImg from "../res/img/speed.jpg";
 
-import video1 from "../res/vid/backgroundVideo.webm";
-import video2 from "../res/vid/backgroundVideo.mp4";
-
 export const worksData = {
 	subtitle: "Works",
 	title: `Few of my projects that I 
    have recently made.`,
 	data: [
 		{
-			id: 1,
-			title: "Netflix",
-			description: "Streaming webisite mockup",
-			image: chatterImg,
-			video: video1,
-			link: "https://michalkulesza.me/chatter",
-			frontendUrl: "https://github.com/michalkulesza/chat-client",
-			backendUrl: "https://github.com/michalkulesza/chat-server",
-			tags: [
-				{
-					id: 1,
-					name: "React",
-					icon: FaReact,
-				},
-				{
-					id: 2,
-					name: "TypeScript",
-					icon: SiTypescript,
-				},
-				{
-					id: 3,
-					name: "Node",
-					icon: FaNodeJs,
-				},
-				{
-					id: 4,
-					name: "Sass",
-					icon: FaSass,
-				},
-			],
-		},
-		{
 			id: 2,
 			title: "Feeder",
 			description: "Social media website, post and like feeds.",
 			image: feederImg,
-			video: video2,
+			video: null,
 			link: "https://michalkulesza.me/feeder/",
 			frontendUrl: "https://github.com/michalkulesza/feeder",
 			backendUrl: null,
