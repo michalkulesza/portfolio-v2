@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 
-export const Main = styled.div`
+export const Main = styled.section`
 	position: relative;
 	height: 100vh;
 	width: 100%;

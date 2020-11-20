@@ -5,12 +5,13 @@ import { Button, Subtitle, Title } from "../../components";
 
 import { footerData } from "../../fixtures/footer";
 import { Colors } from "../../styles/snippets";
+import { CONTACT } from "../../constants/routes";
 
 type Props = {};
 
 const Footer: React.FC<Props> = () => {
 	return (
-		<Main style={{ backgroundColor: Colors.lightGrey }}>
+		<Main id={CONTACT}>
 			<SectionTemplate>
 				<Subtitle>{footerData.subtitle}</Subtitle>
 				<Title>{footerData.title}</Title>

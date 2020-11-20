@@ -5,12 +5,13 @@ import { Subtitle, Title, Grid } from "../../components";
 import { ProjectContainer } from "../../containers";
 
 import { worksData } from "../../fixtures/works";
+import { WORKS } from "../../constants/routes";
 
 type Props = {};
 
 const Works: React.FC<Props> = () => {
 	return (
-		<Main>
+		<Main id={WORKS}>
 			<SectionTemplate>
 				<Subtitle>{worksData.subtitle}</Subtitle>
 				<Title>{worksData.title}</Title>

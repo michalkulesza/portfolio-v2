@@ -6,10 +6,11 @@ import { MainTemplate } from "../../templates";
 import video from "../../res/vid/backgroundVideo.webm";
 import { Colors } from "../../styles/snippets";
 import { headerData } from "../../fixtures/header";
+import { HOME } from "../../constants/routes";
 
 const HeaderContainer: React.FC = () => {
 	return (
-		<Main>
+		<Main id={HOME}>
 			<Content>
 				<MainTemplate horizontal="center" direction="column">
 					<LargeTitle>{headerData.mainText}</LargeTitle>
