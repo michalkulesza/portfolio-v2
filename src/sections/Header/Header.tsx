@@ -3,7 +3,7 @@ import { Main, Content } from "./Header.styled";
 import { Button, Title, LargeTitle, VideoBg } from "../../components";
 import { MainTemplate } from "../../templates";
 
-import video from "../../res/vid/backgroundVideo.webm";
+import video from "../../res/vid/backgroundVideo.mp4";
 import { Colors } from "../../styles/snippets";
 import { headerData } from "../../fixtures/header";
 import { HOME } from "../../constants/routes";
