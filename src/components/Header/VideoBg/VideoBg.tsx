@@ -11,7 +11,7 @@ const VideoBg: React.FC<Props> = ({ video, children, ...restProps }) => {
 		<Wrapper>
 			<Overlay />
 			<Video autoPlay muted loop {...restProps}>
-				<source src={video} type="video/webm" />
+				<source src={video} type="video/mp4" />
 			</Video>
 		</Wrapper>
 	);

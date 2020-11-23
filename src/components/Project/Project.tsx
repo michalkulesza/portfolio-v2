@@ -10,6 +10,7 @@ import {
 } from "./Project.styled";
 import { SmallTitle, Subtitle, Tag, Button } from "../../components";
 import { IconType } from "react-icons";
+import LazyLoad from "react-lazyload";
 
 import { BsArrowRightShort } from "react-icons/bs";
 
@@ -39,8 +40,10 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 	return (
 		<Main>
 			<VideoContainer>
-				{data.video && <Video autoPlay src={data.video} onCanPlayThrough={handleCanPlayThrough}></Video>}
-				<Poster src={data.image} visible={posterVisible}></Poster>
+				<LazyLoad offset={400}>
+					{data.video && <Video autoPlay src={data.video} onCanPlayThrough={handleCanPlayThrough}></Video>}
+					<Poster src={data.image} visible={posterVisible}></Poster>
+				</LazyLoad>
 			</VideoContainer>
 			<ContentContainer>
 				<span>
