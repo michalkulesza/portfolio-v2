@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
       background-color: #FFFFFF;
       color: #fff;
       font-size: 16px;
+      overscroll-behavior: none;
       }
 
    ul,li{

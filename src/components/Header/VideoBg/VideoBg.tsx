@@ -10,7 +10,9 @@ const VideoBg: React.FC<Props> = ({ video, children, ...restProps }) => {
 	return (
 		<Wrapper>
 			<Overlay />
-			<Video src={video} autoPlay muted loop {...restProps}></Video>
+			<Video autoPlay muted loop {...restProps}>
+				<source src={video} type="video/webm" />
+			</Video>
 		</Wrapper>
 	);
 };
