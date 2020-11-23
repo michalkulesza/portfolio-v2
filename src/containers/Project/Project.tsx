@@ -33,7 +33,7 @@ const ProjectContainer: React.FC<Props> = ({ data }) => {
 		}
 	}, [videoReady]);
 
-	return <Project setVideoReady={setVideoReady} posterVisible={posterVisible} data={data}></Project>;
+	return <Project setVideoReady={setVideoReady} posterVisible={posterVisible} data={data} />;
 };
 
 export default ProjectContainer;
