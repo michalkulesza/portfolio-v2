@@ -6,13 +6,13 @@ export const aboutData = {
    creative Web Developer.
    
    My set of skills can provide beautifully crafted
-    and innovative Web Apps
-   using Javascript as well as React.
+   and innovative Web Applications that are built with
+   cutting edge current technologies and frameworks.
    
    My areas of expertise include practical experience with
-   Front-end Development, JavaScript, 
+   Front-end Development, JavaScript, React,
    Single Page Applications, Web Design,
-   Web Components, RESTful & APIs and more…
+   Web Components, RESTful APIs, Databases and many more…
    
    I believe that the truly great experiences come 
    from an ambitious, innovative and up to date expertise. 

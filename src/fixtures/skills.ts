@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaGit, FaNodeJs, FaSass } from "react-icons/fa";
-import { SiJavascript, SiStyledComponents, SiRedux, SiTypescript, SiJest } from "react-icons/si";
+import { SiJavascript, SiStyledComponents, SiRedux, SiTypescript, SiJest, SiMongodb } from "react-icons/si";
 
 export const skillsData = {
 	subtitle: `Skills`,
@@ -60,6 +60,11 @@ export const skillsData = {
 			id: 11,
 			title: "Jest",
 			icon: SiJest,
+		},
+		{
+			id: 12,
+			title: "MongoDB",
+			icon: SiMongodb,
 		},
 	],
 };
