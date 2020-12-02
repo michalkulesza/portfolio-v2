@@ -1,5 +1,5 @@
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript, SiJest, SiRedux } from "react-icons/si";
+import { SiJavascript, SiJest, SiRedux, SiStyledComponents } from "react-icons/si";
 
 import feederImg from "../res/img/feeder.jpg";
 import cardImg from "../res/img/card.jpg";
@@ -9,12 +9,55 @@ import urlImg from "../res/img/url.jpg";
 import calcImg from "../res/img/calc.jpg";
 import guessImg from "../res/img/guess.jpg";
 import speedImg from "../res/img/speed.jpg";
+import netflixImg from "../res/img/netflix.jpg";
 
 export const worksData = {
 	subtitle: "Works",
 	title: `Few of my projects that I 
    have recently made.`,
 	data: [
+		{
+			id: 1,
+			title: "Netflix",
+			description: "Search and save your favourite videos.",
+			image: netflixImg,
+			video: null,
+			link: "https://xcxz-netflix.netlify.app/",
+			frontendUrl: "https://github.com/michalkulesza/netflix",
+			backendUrl: "https://github.com/michalkulesza/netflix-backend",
+			tags: [
+				{
+					id: 1,
+					name: "React",
+					icon: FaReact,
+				},
+				{
+					id: 2,
+					name: "Javascript",
+					icon: SiJavascript,
+				},
+				{
+					id: 3,
+					name: "Redux",
+					icon: SiRedux,
+				},
+				{
+					id: 4,
+					name: "StyledComponents",
+					icon: SiStyledComponents,
+				},
+				{
+					id: 5,
+					name: "Jest",
+					icon: SiJest,
+				},
+				{
+					id: 6,
+					name: "Node",
+					icon: FaNodeJs,
+				},
+			],
+		},
 		{
 			id: 2,
 			title: "Feeder",
