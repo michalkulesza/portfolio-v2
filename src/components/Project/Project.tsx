@@ -40,7 +40,7 @@ const Project: React.FC<Props> = ({ data, posterVisible = true, setVideoReady })
 	return (
 		<Main>
 			<VideoContainer>
-				<LazyLoad offset={400}>
+				<LazyLoad offset={1200}>
 					{data.video && <Video autoPlay src={data.video} onCanPlayThrough={handleCanPlayThrough}></Video>}
 					<Poster src={data.image} visible={posterVisible}></Poster>
 				</LazyLoad>
