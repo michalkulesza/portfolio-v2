@@ -99,6 +99,11 @@ export const worksData = {
 					name: "Sass",
 					icon: FaSass,
 				},
+				{
+					id: 7,
+					name: "Node",
+					icon: FaNodeJs,
+				},
 			],
 		},
 		{
