@@ -81,7 +81,7 @@ export const worksData = {
 				},
 				{
 					id: 3,
-					title: "TypeScript",
+					name: "TypeScript",
 					icon: SiTypescript,
 				},
 				{
@@ -91,7 +91,7 @@ export const worksData = {
 				},
 				{
 					id: 5,
-					title: "MongoDB",
+					name: "MongoDB",
 					icon: SiMongodb,
 				},
 				{
