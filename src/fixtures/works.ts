@@ -112,7 +112,7 @@ export const worksData = {
 			description: "Social media website, post and like feeds.",
 			image: feederImg,
 			video: null,
-			link: "https://michalkulesza.me/feeder/",
+			link: "https://xcxz-feeder.netlify.app/",
 			frontendUrl: "https://github.com/michalkulesza/feeder",
 			backendUrl: null,
 			tags: [
