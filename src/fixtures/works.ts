@@ -81,7 +81,7 @@ export const worksData = {
 				},
 				{
 					id: 3,
-					title: "TypeScript",
+					name: "TypeScript",
 					icon: SiTypescript,
 				},
 				{
@@ -91,13 +91,18 @@ export const worksData = {
 				},
 				{
 					id: 5,
-					title: "MongoDB",
+					name: "MongoDB",
 					icon: SiMongodb,
 				},
 				{
 					id: 6,
 					name: "Sass",
 					icon: FaSass,
+				},
+				{
+					id: 7,
+					name: "Node",
+					icon: FaNodeJs,
 				},
 			],
 		},
@@ -107,7 +112,7 @@ export const worksData = {
 			description: "Social media website, post and like feeds.",
 			image: feederImg,
 			video: null,
-			link: "https://michalkulesza.me/feeder/",
+			link: "https://xcxz-feeder.netlify.app/",
 			frontendUrl: "https://github.com/michalkulesza/feeder",
 			backendUrl: null,
 			tags: [

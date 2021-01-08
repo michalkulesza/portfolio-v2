@@ -27,7 +27,7 @@ export const VideoContainer = styled.div`
 	position: relative;
 	height: 100%;
 	width: 100%;
-	padding-bottom: 62.5%;
+	padding-bottom: 75%;
 	box-shadow: ${Shadow.medium};
 	border-radius: 3px;
 	overflow: hidden;
